@@ -30,12 +30,13 @@
       }
 
       .mapboxgl-popup {
-        max-width: 300px;
+        max-width: 280px;
       }
 
       .mapboxgl-popup-content {
         text-align: center;
         font-family: 'Open Sans', sans-serif;
+        font-size: 8pt;
       }
 
       .filter-group {
@@ -99,7 +100,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2hpb3Jpb3NhIiwiYSI6ImNqb3hmam5rZjI4NXEzcHB0M
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/shioriosa/cjuz1h9ik0mj41fnyq6tg03v3'
+    style: 'mapbox://styles/shioriosa/cjuz1h9ik0mj41fnyq6tg03v3',
+    center: [-66.409060, 18.249523],
+    zoom: 8
 });
 
 var filterGroup = document.getElementById('filter-group');
